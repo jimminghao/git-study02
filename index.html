@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ZH-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网抑云</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+    <div class="header w">
+        <div class="logo">
+            <img src="images/wyyLogo.png" alt="">
+            <h1>网抑云音乐</h1>
+        </div>
+        <!-- 左侧按钮 -->
+        <a href="#" class="prev"><</a>
+        <!-- 右侧按钮 -->
+        <a href="#" class="next">></a>
+        <!-- 搜索框模块 -->
+        <div class="search">
+            <button id="searchbtn"></button>
+            <input id='searchInput' type="search" placeholder="大家都在搜">
+        </div>
+        <!-- 听歌识曲图标 -->
+        <div class="shiqv"><a href="#" title="听歌识曲"></a></div>
+        <!-- 登录模块 -->
+        <div class="login">
+            <a href="#">
+                <img class="touxiang" src="images/pig.png" alt="">
+            </a>
+            <!-- 显示用户昵称，若未登录则显示“未登录” -->
+            <a href="#" id="nickName">未登录</a>
+            <a href="" class="VIP">VIP开通</a>
+        </div>
+
+        <div class="threeLogo">
+            <a href="#">皮肤</a>
+            <a href="#">设置</a>
+            <a href="#">消息</a>
+        </div>
+    </div>
+    <!-- 中间的主要内容 -->
+    <div class="main w">
+        <!-- 左侧导航栏 -->
+        <div class="nav">
+            <!-- 发现音乐 -->
+            <div class="faxianyinyue">
+                <ul>
+                    <li>发现音乐</li>
+                    <li>博客</li>
+                    <li>视频</li>
+                    <li>关注</li>
+                    <li>直播</li>
+                    <li>私人FM</li>
+                </ul>
+            </div>
+            <!-- 我的音乐 -->
+            <div class="myMusic">
+                我的音乐
+            </div>
+        </div>
+        <!-- 中间的最大块展示 -->
+        <div class="show">
+
+            <!-- 展示1：显示搜索的歌曲 -->
+            <div class="songList" keywords="" page="0">
+                <ul>
+                    <li class="firstRow"><span class="songNum"></span><span class="songDownload"></span><span class="songName">音乐标题</span><span class="singerName">歌手</span><span class="albumName">专辑</span><span class="songTime">时长</span><span class="songHot">热度</span></li>
+                    <li class="songItem"><span class="songNum">01</span><span class="songDownload"><a href="#"></a></span><span class="songName">音乐标题</span><span class="singerName">歌手</span><span class="albumName">专辑</span><span class="songTime">时长</span><span class="songHot">热度</span></li>
+                    <li class="songItem"><span class="songNum">01</span><span class="songDownload"><a href="#"></a></span><span class="songName">音乐标题</span><span class="singerName">歌手</span><span class="albumName">专辑</span><span class="songTime">时长</span><span class="songHot">热度</span></li>
+                    <li class="songItem"><span class="songNum">01</span><span class="songDownload"><a href="#"></a></span><span class="songName">音乐标题</span><span class="singerName">歌手</span><span class="albumName">专辑</span><span class="songTime">时长</span><span class="songHot">热度</span></li>
+                    <li class="songItem"><span class="songNum">01</span><span class="songDownload"><a href="#"></a></span><span class="songName">音乐标题</span><span class="singerName">歌手</span><span class="albumName">专辑</span><span class="songTime">时长</span><span class="songHot">热度</span></li>
+                    <li class="songItem"><span class="songNum">01</span><span class="songDownload"><a href="#"></a></span><span class="songName">音乐标题</span><span class="singerName">歌手</span><span class="albumName">专辑</span><span class="songTime">时长</span><span class="songHot">热度</span></li>
+                    <li class="songItem"><span class="songNum">01</span><span class="songDownload"><a href="#"></a></span><span class="songName">音乐标题</span><span class="singerName">歌手</span><span class="albumName">专辑</span><span class="songTime">时长</span><span class="songHot">热度</span></li>
+                    <li class="songItem"><span class="songNum">01</span><span class="songDownload"><a href="#"></a></span><span class="songName">音乐标题</span><span class="singerName">歌手</span><span class="albumName">专辑</span><span class="songTime">时长</span><span class="songHot">热度</span></li>
+                    <li class="songItem"><span class="songNum">01</span><span class="songDownload"><a href="#"></a></span><span class="songName">王力宏-天地龙鳞+孤勇者 （梦梦爱吃肉 remix）</span><span class="singerName">歌手</span><span class="albumName">专辑</span><span class="songTime">时长</span><span class="songHot">热度</span></li>
+                    <li class="songItem"><span class="songNum">01</span><span class="songDownload"><a href="#"></a></span><span class="songName">音乐标题</span><span class="singerName">歌手</span><span class="albumName">专辑</span><span class="songTime">时长</span><span class="songHot">热度</span></li>
+                    <li class="songItem"><span class="songNum">01</span><span class="songDownload"><a href="#"></a></span><span class="songName">音乐标题</span><span class="singerName">歌手</span><span class="albumName">专辑</span><span class="songTime">时长</span><span class="songHot">热度</span></li>
+                    <li class="songItem"><span class="songNum">01</span><span class="songDownload"><a href="#"></a></span><span class="songName">音乐标题</span><span class="singerName">歌手</span><span class="albumName">专辑</span><span class="songTime">时长</span><span class="songHot">热度</span></li>
+                    <li class="songItem"><span class="songNum">01</span><span class="songDownload"><a href="#"></a></span><span class="songName">音乐标题</span><span class="singerName">歌手</span><span class="albumName">专辑</span><span class="songTime">时长</span><span class="songHot">热度</span></li>
+                    <li class="songItem"><span class="songNum">01</span><span class="songDownload"><a href="#"></a></span><span class="songName">音乐标题</span><span class="singerName">歌手</span><span class="albumName">专辑</span><span class="songTime">时长</span><span class="songHot">热度</span></li>
+                    <li class="songItem"><span class="songNum">01</span><span class="songDownload"><a href="#"></a></span><span class="songName">音乐标题</span><span class="singerName">歌手</span><span class="albumName">专辑</span><span class="songTime">时长</span><span class="songHot">热度</span></li>
+                    <li class="songItem"><span class="songNum">01</span><span class="songDownload"><a href="#"></a></span><span class="songName">音乐标题</span><span class="singerName">歌手</span><span class="albumName">专辑</span><span class="songTime">时长</span><span class="songHot">热度</span></li>
+                    <li class="songItem"><span class="songNum">01</span><span class="songDownload"><a href="#"></a></span><span class="songName">王力宏-天地龙鳞+孤勇者 （梦梦爱吃肉 remix）</span><span class="singerName">歌手</span><span class="albumName">专辑</span><span class="songTime">时长</span><span class="songHot">热度</span></li>
+                    <li class="songItem"><span class="songNum">01</span><span class="songDownload"><a href="#"></a></span><span class="songName">音乐标题</span><span class="singerName">歌手</span><span class="albumName">专辑</span><span class="songTime">时长</span><span class="songHot">热度</span></li>
+                    <li class="songItem"><span class="songNum">01</span><span class="songDownload"><a href="#"></a></span><span class="songName">音乐标题</span><span class="singerName">歌手</span><span class="albumName">专辑</span><span class="songTime">时长</span><span class="songHot">热度</span></li>
+                    <li class="songItem"><span class="songNum">01</span><span class="songDownload"><a href="#"></a></span><span class="songName">音乐标题</span><span class="singerName">歌手</span><span class="albumName">专辑</span><span class="songTime">时长</span><span class="songHot">热度</span></li>
+                    <li class="songItem"><span class="songNum">01</span><span class="songDownload"><a href="#"></a></span><span class="songName">音乐标题</span><span class="singerName">歌手</span><span class="albumName">专辑</span><span class="songTime">时长</span><span class="songHot">热度</span></li>
+                    <li class="songItem"><span class="songNum">01</span><span class="songDownload"><a href="#"></a></span><span class="songName">音乐标题</span><span class="singerName">歌手</span><span class="albumName">专辑</span><span class="songTime">时长</span><span class="songHot">热度</span></li>
+                    <li class="songItem"><span class="songNum">01</span><span class="songDownload"><a href="#"></a></span><span class="songName">音乐标题</span><span class="singerName">歌手</span><span class="albumName">专辑</span><span class="songTime">时长</span><span class="songHot">热度</span></li>
+                    <li class="songItem"><span class="songNum">01</span><span class="songDownload"><a href="#"></a></span><span class="songName">音乐标题</span><span class="singerName">歌手</span><span class="albumName">专辑</span><span class="songTime">时长</span><span class="songHot">热度</span></li>
+                    <li class="songItem"><span class="songNum">01</span><span class="songDownload"><a href="#"></a></span><span class="songName">王力宏-天地龙鳞+孤勇者 （梦梦爱吃肉 remix）</span><span class="singerName">歌手</span><span class="albumName">专辑</span><span class="songTime">时长</span><span class="songHot">热度</span></li>
+                    <li class="songItem"><span class="songNum">01</span><span class="songDownload"><a href="#"></a></span><span class="songName">音乐标题</span><span class="singerName">歌手</span><span class="albumName">专辑</span><span class="songTime">时长</span><span class="songHot">热度</span></li>
+                    <li class="songItem"><span class="songNum">01</span><span class="songDownload"><a href="#"></a></span><span class="songName">音乐标题</span><span class="singerName">歌手</span><span class="albumName">专辑</span><span class="songTime">时长</span><span class="songHot">热度</span></li>
+                    <li class="songItem"><span class="songNum">01</span><span class="songDownload"><a href="#"></a></span><span class="songName">音乐标题</span><span class="singerName">歌手</span><span class="albumName">专辑</span><span class="songTime">时长</span><span class="songHot">热度</span></li>
+                    <li class="songItem"><span class="songNum">01</span><span class="songDownload"><a href="#"></a></span><span class="songName">音乐标题</span><span class="singerName">歌手</span><span class="albumName">专辑</span><span class="songTime">时长</span><span class="songHot">热度</span></li>
+                    <li class="songItem"><span class="songNum">01</span><span class="songDownload"><a href="#"></a></span><span class="songName">音乐标题</span><span class="singerName">歌手</span><span class="albumName">专辑</span><span class="songTime">时长</span><span class="songHot">热度</span></li>
+                    <li class="songItem"><span class="songNum">01</span><span class="songDownload"><a href="#"></a></span><span class="songName">音乐标题</span><span class="singerName">歌手</span><span class="albumName">专辑</span><span class="songTime">时长</span><span class="songHot">热度</span></li>
+                </ul>
+                <!-- 展示分页 -->
+                <div id="fenye">
+                    <ul>
+                        <li id="prePage"><a href="#"><</a></li>
+                        <li index="0"><a href="#" >1</a></li>
+                        <li index="1"><a href="#" >2</a></li>
+                        <li index="2"><a href="#" >3</a></li>
+                        <li id="nextPage"><a href="#">></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 显示歌词 -->
+            
+            
+            
+        </div>
+        
+        <!-- 歌词展示 -->
+        <div class="lyricShow w">
+            <div class="albumBanner">
+                专辑图
+            </div>
+            <div class="lyricBanner">
+                
+            </div>
+            <div class="lyricRight">
+                歌词右边
+            </div>
+        </div>
+        
+    </div>
+    <!-- 下方音乐播放 -->
+    <div class="musicPlay w">
+        <!-- 现在播放的音乐，隐藏 -->
+        <audio id="nowPlaying" playingFlag="false" controls="controls" loop="loop" src="http://m7.music.126.net/20220514181035/39424cda74d62c4716aa0ef6c2931269/ymusic/0fd6/4f65/43ed/a8772889f38dfcb91c04da915b301617.mp3" type="audio/mp3">
+        </audio>
+        <!-- 显示歌曲专辑图片 -->
+        <img id="albumPhoto" src="images/touxiang.jpg" alt="">
+        <!-- 显示歌曲名称和歌手名字 -->
+        <div id="playingDetail">
+            <div id="songNamePlaying">歌名</div>
+            <div id="singerPlaying">歌手</div>
+        </div>
+        <!-- 控制播放区域 -->
+        <div class="playingControl">
+            <!-- 设置播放暂停按钮 -->
+            <button id="playbtn"></button>
+            <!-- 播放进度条 -->
+            <div class="process">
+                <div class="processAll">
+                    <div id="circle"></div>
+                    <div class="processNow">
+            
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+    
+</body>
+</html>

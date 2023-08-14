@@ -1,0 +1,445 @@
+/* 声明字体图标 这里一定要注意路径的变化 */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?tomleg');
+    src:  url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+      url('../fonts/icomoon.woff?tomleg') format('woff'),
+      url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+  /* 版心 */
+  .w {
+      width: 1020px;
+      margin: 0 auto;
+  }
+
+  /* 头部 */
+  .header {
+      height: 60px;
+      background-color: #EC4141;
+
+  }
+
+  /* 网易云图标 */
+  .logo {
+      float: left;
+      height: 60px;
+      padding-left: 15px;
+  }
+
+  .logo img {
+      float: left;
+      height: 100%;
+  }
+
+  .logo h1 {
+      float: left;
+      height: 60px;
+      color: #FFFFFF;
+      font-size: 16px;
+      line-height: 60px;
+  }
+
+  .prev, .next {
+      float: left;
+      width: 25px;
+      height: 25px;
+      text-align: center;
+      background: rgba(0, 0, 0, .2);
+      border-radius: 13px;
+      margin-top: 20px;
+      
+  }
+
+  .prev {
+    margin-left: 85px;
+    margin-right: 10px;
+  }
+
+  /* 头部搜素 */
+  .search {
+      float: left;
+      height: 30px;
+      background: rgba(241,163,163, .3);
+      margin-left: 15px;
+      margin-top: 15px;
+  }
+/* 搜索按钮 */
+  .search button {
+      float: left;
+      font-family: 'icomoon';
+      width: 18px;
+      height: 30px;
+      background: rgba(236,65,65, .3);
+      color: #F9D8D8;
+
+  }
+/* 搜索输入框 */
+.search input {
+    float: left;
+    width: 128px;
+    height: 30px;
+    background: rgba(236,65,65, .3);
+    color: #F9D8D8;
+}
+
+/* 听歌识曲 */
+.shiqv {
+    float: left;
+    font-family: 'icomoon';
+    width: 30px;
+    height: 30px;
+    background: rgba(241,163,163, .3);
+    text-align: center;
+    line-height: 30px;
+    margin-top: 15px;
+    margin-left: 5px;
+    border-radius: 15px;
+}
+
+/* 登录图标 */
+.login {
+    float: left;
+    width: 155px;
+    height: 60px;
+    text-align: center;
+    margin-left: 90px;
+    color: #FFFFFF;
+
+}
+
+.login .touxiang {
+    width: 30px;
+    height: 30px;
+    margin: 15px 0;
+    border-radius: 15px;
+    background-color: #E0E0E0;
+}
+
+.login .VIP {
+    width: 55px;
+    height: 16px;
+    background-color: #CCCCCC;
+}
+
+.threeLogo {
+    float: left;
+    width: 108px;
+    height: 20px;
+    margin-left: 15px;
+    margin-top: 20px;
+    border-right: 1px solid #F38D8D;
+}
+
+.main {
+    height: 540px;
+}
+
+/* 左侧导航栏 */
+.nav {
+    /* display: none; */
+    float: left;
+    width: 200px;
+    height: 540px;
+    /* background-color: purple; */
+}
+
+.show {
+    display: none;
+    float: left;
+    width: 820px;
+    height: 540px;
+    overflow: auto;
+    /* background-color: skyblue; */
+    /* overflow: auto; */
+}
+
+/* 下方的音乐播放模块 */
+.musicPlay {
+    height: 76px;
+    background-color: pink;
+    border-top: 2px solid #E0E0E0;
+}
+
+/* 发现音乐模块 */
+.nav .faxianyinyue {
+    width: 200px;
+    height: 240px;
+    /* background-color: red; */
+}
+
+/* 我的音乐模块 */
+.nav .myMusic {
+    width: 200px;
+    height: 115px;
+    /* background-color: green; */
+}
+
+.songList {
+    /* 一开始隐藏 */
+    display: none;
+    width: 768px;
+    height: 540px;
+    margin-left: 35px;
+    
+}
+
+.songList ul {
+    /* overflow: auto; */
+    /* overflow-y: "hidden"; */
+    
+}
+
+/* 搜索的歌曲列表展示 */
+.songList li {
+    width: 768px;
+    height: 33px;
+    background-color: #F0F1F2;
+    margin: 0 auto;
+    cursor: default;
+}
+/* 每一行中所显示的歌曲名称、歌手名称、专辑名称、时长、热度 */
+.songList li span {
+    display: inline-block;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    height: 33px;
+    /* text-align: center; */
+    font-size: 14px;
+    line-height: 33px;
+    /* margin: 0 12px; */
+}
+/* 为音乐名称、歌手、专辑的span分别设置宽度 */
+.songList li .songName {
+    width: 250px;
+    margin: 0 12px;
+}
+/* 歌手名 */
+.songList li .singerName {
+    width: 105px;
+    margin: 0 12px;
+}
+/* 专辑名 */
+.songList li .albumName {
+    width: 125px;
+}
+/* 歌曲时长 */
+.songList li .songTime {
+    width: 50px;
+}
+
+.songList li .songHot {
+    width: 85px;
+    margin-right: 0;
+}
+
+.songList li .songNum {
+    width: 32px;
+}
+
+.songList li .songDownload {
+    font-family: 'icomoon';
+    font-size: 16px;
+    width: 32px;
+}
+
+/* 设置分页 */
+#fenye {
+    width: 145px;
+    height: 25px;
+    margin: 35px auto;
+}
+
+.songList #fenye ul li {
+    float: left;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    margin: 0 1px;
+}
+
+.songList #fenye ul li a {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #E6E6E6;
+    text-align: center;
+    line-height: 25px;
+    
+}
+
+/* .songList #fenye ul li a:hover {
+    background-color: #F4F4F4;
+} */
+
+/* 正在播放的音频 */
+#nowPlaying {
+    display: none;
+}
+
+
+/* 存放正在播放的歌曲专辑图 */
+.musicPlay #albumPhoto {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 12px 12px;
+}
+
+/* 存放正在播放的歌曲的歌名和歌手名 */
+#playingDetail {
+    position: relative;
+    float: left;
+    width: 185px;
+    height: 100%;
+    margin: 0 12px;
+}
+/* 显示歌曲名和歌手名 */
+#songNamePlaying, #singerPlaying {
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+
+}
+/* 设置定位 */
+#songNamePlaying {
+    position: absolute;
+    top: 14px;
+
+}
+#singerPlaying {
+    position: absolute;
+    top: 38px;
+
+}
+
+.playingControl {
+    position: relative;
+    float: left;
+    width: 430px;
+    height: 100%;
+    /* text-align: center; */
+}
+
+/* 播放按钮样式 */
+#playbtn {
+    font-family: 'icomoon';
+    position: absolute;
+    top: 10px;
+    left: 196px;
+    width: 38px;
+    height: 38px;
+    font-size: 20px;
+    line-height: 38px;
+    text-align: center;
+    background-color: #F4F4F4;
+    border-radius: 20px;
+}
+
+#playbtn:hover {
+    background-color: #CDCDCD;
+}
+
+/* 存放进度条的盒子 */
+.process {
+    /* 用绝对定位设置进度条盒子的位置 */
+    position: absolute;
+    bottom: 12px;
+    left: 40px;
+    width: 350px;
+    float: left;
+    height: 3px;
+    cursor: pointer;
+}
+/* 总进度条 */
+.processAll{
+    position: relative;
+    width: 350px;
+    float: left;
+    height: 3px;
+    cursor: pointer;
+    background-color: #CDCDCD;   
+}
+/* 当前已播放进度条 */
+.processNow {
+    float: left;
+    width: 0px;
+    height: 3px;
+    cursor: pointer;
+    background-color: #FF4E4E;
+}
+/* 小圆点 */
+#circle {
+    /* 用绝对定位个小圆点定位置 */
+    position: absolute;
+    top: -0.5px;
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #FF4E4E;
+}
+
+
+
+/* 存放歌词的大盒子，里面包括三部分 */
+.lyricShow {
+    position: relative;
+    /* 一开始隐藏 */
+    display: none;
+    height: 540px;
+    /* background-color: skyblue; */
+    overflow: auto;
+}
+/* 展示专辑图 */
+.albumBanner {
+    float: left;
+    width: 320px;
+    height: 540px;
+}
+/* 展示歌词的盒子 */
+.lyricBanner {
+    float: left;
+    width: 250px;
+    height: 540px;
+    margin-left: 70px;
+}
+/* 存放歌词面板中的歌名 */
+.lyricBanner h1 {
+    width: 250px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.lyricBanner .singerAlbum {
+    width: 250px;
+    height: 20px;
+    margin-bottom: 85px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+}
+/* 存放歌词的p */
+.lyricP {
+    width: 250px;
+    height: 20px;
+    margin: 25px auto;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    cursor: default;
+}
+/* 歌词版心右侧 */
+.lyricRight {
+    float: left;
+    width: 290px;
+    height: 540px;
+    margin-left: 70px;
+}

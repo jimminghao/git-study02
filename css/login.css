@@ -1,0 +1,43 @@
+body {
+    background-color: skyblue;
+}
+.login {
+    width: 350px;
+    height: 530px;
+    background-color: #fff;
+    text-align: center;
+    margin: 100px auto;
+    /* 解决盒子塌陷问题 */
+    overflow: hidden;
+}
+
+.shuru {
+    width: 260px;
+    height: 80px;
+    margin: 0 auto;
+    margin-top: 108px;
+}
+
+.shuru .phone, .pwd {
+    width: 260px;
+    height: 40px;
+    border: 1px solid #D8D8D8;
+}
+
+.shuru .pwd {
+    border-top: 0;
+}
+
+.autoLogin {
+    margin: 15px 0 15px -196px;
+}
+
+/* 登录按钮 */
+.loginbtn {
+    display: block;
+    width: 260px;
+    height: 43px;
+    background-color: #C72E2E;
+    color: #fff;
+    margin: 15px 0 15px 45px;
+}

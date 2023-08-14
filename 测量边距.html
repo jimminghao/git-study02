@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .lyricShow {
+            position: relative;
+            /* 一开始隐藏 */
+            /* display: none; */
+            width: 1020px;
+            height: 540px;
+            margin: 0 auto;
+            /* background-color: skyblue; */
+            overflow: auto;
+        }
+        .lyricP {
+            width: 250px;
+            height: 20px;
+            margin: 25px auto;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+        }
+        .lyricBanner {
+            float: left;
+            width: 320px;
+            height: 540px;
+        }
+    </style>
+</head>
+<body>
+    <div class="lyricShow">
+        <div class="lyricBanner">
+            <p id="p1" class="lyricP">1</p>
+            <p id="p2" class="lyricP">2</p>
+            <p id="p3" class="lyricP">3</p>
+        </div>
+    </div>
+
+    <script>
+        var p1 = document.getElementById('p1');
+        console.log(p1.offsetParent);
+    </script>
+</body>
+</html>
